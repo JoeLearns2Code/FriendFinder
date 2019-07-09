@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+    <!-- Bootstrap & Jquery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="container content">
+        <h1>Survey</h1>
+        <hr>
+        <p>Please fill out your name and provide a link a current photo of yourself.</p>
+        <form>
+            <div class="form-group">
+                <input id="name" type="text" class="form-control" placeholder="Name (Required)" required>
+            </div>
+            <div class="form-group">
+                <input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)"
+                    required>
+            </div>
+            <p>Please answer the following questions by selecting from a scale of 1-5, where 1 indicates you "Strongly
+                Disagree" and 5 indicates you "Strongly Agree".</p>
+            <br>
+            <div class="form-group">
+                <h4><strong>Ignorance is bliss.</strong></h4>
+                <select class="form-control" id="q1">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Somewhat Disagree)</option>
+                    <option value="3">3 (Neither Agree or Disagree)</option>
+                    <option value="4">4 (Somewhat Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4><strong>The mind can make anything real.</strong></h4>
+                <select class="form-control" id="q2">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Somewhat Disagree)</option>
+                    <option value="3">3 (Neither Agree or Disagree)</option>
+                    <option value="4">4 (Somewhat Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4><strong>The answer is out there.  It's looking for you, and it will find you if you want it to.</strong></h4>
+                <select class="form-control" id="q3">
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Somewhat Disagree)</option>
+                    <option value="3">3 (Neither Agree or Disagree)</option>
+                    <option value="4">4 (Somewhat Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <h4><strong>Throughout human history, we have been dependent on machines to survive.</strong></h4>
+                    <select class="form-control" id="q4">
+                        <option value="empty"></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Somewhat Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Somewhat Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                    <h4><strong>Human beings are a disease, a cancer of this planet.</strong></h4>
+                    <select class="form-control" id="q5">
+                        <option value="empty"></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Somewhat Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Somewhat Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                    <h4><strong>There is no spoon.</strong></h4>
+                    <select class="form-control" id="q6">
+                        <option value="empty"></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Somewhat Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Somewhat Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                    <h4><strong>To deny our own impulses is to deny the very thing that makes us human.</strong></h4>
+                    <select class="form-control" id="q7">
+                        <option value="empty"></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Somewhat Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Somewhat Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                    <h4><strong>There is a difference between knowing the path and walking the path.</strong></h4>
+                    <select class="form-control" id="q8">
+                        <option value="empty"></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Somewhat Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Somewhat Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                    <h4><strong>We can never see past the choices we don't understand.</strong></h4>
+                    <select class="form-control" id="q9">
+                        <option value="empty"></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Somewhat Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Somewhat Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                    <h4><strong>We are all stuck in The Matrix.</strong></h4>
+                    <select class="form-control" id="q10">
+                        <option value="empty"></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Somewhat Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Somewhat Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+            </div>
+        </form>
+        <div class="text-center">
+            <button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+        </div>
+</body>
+
+</html>
