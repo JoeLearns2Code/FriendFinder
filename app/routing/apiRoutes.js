@@ -32,8 +32,9 @@ module.exports = function(app) {
             for (var j = 0; j < responses.length; j++) {
                 difference += Math.abs(friends[i].scores[j] - responses[j]);
             }
-            //match friend if the difference is the least
+            //match friend if the difference is the least amount
             if (difference < totalDifference) {
+                //lower differences becomes total difference until only lowest difference value remains
                 totalDifference = difference
                 matchName = friends[i].name;
                 matchImage = friends[i].photo;
