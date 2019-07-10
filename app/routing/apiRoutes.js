@@ -18,6 +18,7 @@ module.exports = function(app) {
 
         //variable for user answers, based on scores array
         var responses = input.scores;
+        console.log("responses: " + responses);
 
         //variables for best match
         var matchName = "";
@@ -44,6 +45,9 @@ module.exports = function(app) {
         //Adding the new user to the friends data
         friends.push(input);
         //Send response.json
+        console.log("match name: " + matchName)
+        console.log("match image: " + matchImage)
+
         res.json({status: "OK", matchName: matchName, matchImage: matchImage});
     });
 };
