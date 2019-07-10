@@ -208,6 +208,7 @@
                 };
                 //variable for local host
                 var currentURL = window.location.origin;
+                // console.log(currentURL);
 
                 //Ajax call for receiving response after Post
                 $.post(currentURL + "/api/friends", newFriend, function(data) {

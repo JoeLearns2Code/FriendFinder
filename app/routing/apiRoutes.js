@@ -17,7 +17,7 @@ module.exports = function(app) {
         console.log("Client input: " + JSON.stringify(input));
 
         //variable for user answers, based on scores array
-        var responses = userData.scores;
+        var responses = input.scores;
 
         //variables for best match
         var matchName = "";
