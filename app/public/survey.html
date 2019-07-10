@@ -212,8 +212,8 @@
 
                 //Ajax call for receiving response after Post and displaying in Modal element id's
                 $.post(currentURL + "/api/friends", newFriend, function(input) {
-                    $("#matchFriend").text(input.name);
-                    $("#matchFriendPhoto").attr("src", input.photo);
+                    $("#matchFriend").text(input.matchName);
+                    $("#matchFriendPhoto").attr("src", input.matchImage);
                     $("#matchFriendModal").modal("toggle");
                 })
             }
